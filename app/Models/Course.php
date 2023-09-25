@@ -28,7 +28,7 @@ class Course extends Model
 
     //Relacion uno a muchos
     public function reviews(){
-        return $thid->hasMany('App\Models\Review');
+        return $this->hasMany('App\Models\Review');
     }
 
     public function requirements(){
@@ -49,7 +49,7 @@ class Course extends Model
 
     //Relacion unos a muchos inversa
     public function teacher(){
-        return $thid->belongsTo('App\Models\User','user_id');
+        return $this->belongsTo('App\Models\User','user_id');
     }
 
     public function level(){
