@@ -20,7 +20,7 @@ class CourseSeeder extends Seeder
      */
     public function run(): void
     {
-        $courses = Course::factory(40)->create();
+        $courses = Course::factory(100)->create();
 
         foreach($courses as $course) {
             Image::factory(1)->create([
@@ -54,3 +54,5 @@ class CourseSeeder extends Seeder
 
     }
 }
+
+//video 13 tiempo 51:20
