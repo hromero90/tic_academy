@@ -28,8 +28,76 @@
     </section>
 
     <section class="mt-24">
-            <h1 class="text-gray-600 text-center text-3xl">Contenido</h1>
+            <h1 class="text-gray-600 text-center text-3xl mb-6">Contenido</h1>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-x-6 gap-y-8">
+                <article>
+                    <figure>
+                        <img class="rounded-xl h-50 w-full object-cover" src="{{asset('img/home/pexels-armin-rimoldi-5553050 tiny.jpg')}}" alt="">
+                    </figure>
+
+                    <header class="mt-2">
+                        <h1 class="text-center text-xl text-gray-700">Cursos Online</h1>
+                    </header>
+                    <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur iusto tempora sit sapiente, doloremque, perferendis dignissimos perspiciatis dicta cum placeat nam provident modi porro similique, deleniti eveniet. Quasi, eveniet?</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img class="rounded-xl h-50 w-full object-cover" src="{{asset('img/home/pexels-karolina-grabowska-4497759 tiny.jpg')}}" alt="">
+                    </figure>
+
+                    <header class="mt-2">
+                        <h1 class="text-center text-xl text-gray-700">Productos</h1>
+                    </header>
+                    <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur iusto tempora sit sapiente, doloremque, perferendis dignissimos perspiciatis dicta cum placeat nam provident modi porro similique, deleniti eveniet. Quasi, eveniet?</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img class="rounded-xl h-50 w-full object-cover" src="{{asset('img/home/pexels-karolina-grabowska-4498362 tiny.jpg')}}" alt="">
+                    </figure>
+
+                    <header class="mt-2">
+                        <h1 class="text-center text-xl text-gray-700">Tutoría</h1>
+                    </header>
+                    <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur iusto tempora sit sapiente, doloremque, perferendis dignissimos perspiciatis dicta cum placeat nam provident modi porro similique, deleniti eveniet. Quasi, eveniet?</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img class="rounded-xl h-50 w-full object-cover" src="{{asset('img/home/pexels-katerina-holmes-5905709 tiny.jpg')}}" alt="">
+                    </figure>
+
+                    <header class="mt-2">
+                        <h1 class="text-center text-xl text-gray-700">Foros</h1>
+                    </header>
+                    <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur iusto tempora sit sapiente, doloremque, perferendis dignissimos perspiciatis dicta cum placeat nam provident modi porro similique, deleniti eveniet. Quasi, eveniet?</p>
+                </article>
+
+            </div>
+    </section>
+
+    <section class="mt-24 bg-gray-700 py-12">
+        <h1 class="text-center text-white text-3xl">Bienvenidos al sitio web TIC Academy</h1>
+        <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae reprehenderit quod enim cumque officiis quos libero ducimu.</p>
+        <div class="flex justify-center mt-4">
+            <a href="{{route('courses.index')}}" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Catalogo de Cursos</a>
+        </div>
+    </section>
+
+    <section class="mt-24">
+        <h1 class="text-center text-3xl text-gray-600">Últimos Cursos</h1>
+        <p class="text-center text-gray-500 text-sm mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo animi, molestiae illo volupta</p>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-4 gap-x-6 gap-y-8">
+            @foreach ($courses as $course)
+                <article>
+                    <img src="{{Storage::url($course->image->url)}}" alt="">
+                </article>
+            @endforeach
+
+        </div>
     </section>
     
 </x-app-layout>
-<!--Minuto 15: 28 del video--!

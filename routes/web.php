@@ -26,3 +26,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+        Route::get('cursos', function (){
+            return "Aqui se mostrara la lista de los cursos";
+        })->name('courses.index');
+
