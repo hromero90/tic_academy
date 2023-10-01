@@ -1,8 +1,8 @@
-# TIC Academy :computer:
+# TIC Academy :mortar_board:
 ![](https://tinypic.host/images/2023/10/01/logo-completo-con-borde-blanco_013128.png)
 ### Es una plataforma web que nace del reto de crear cursos de formación continua para los docentes del sistema educativo nacional.
 
-# Tecnologías de Desarrollo :tw-1f4bb:
+# Tecnologías de Desarrollo  :computer: 
 
 [========]
 **Sistema de control de versione**s - GIT.  [TIC Academy](https://github.com/hromero90/tic_academy "TIC Academy")
@@ -38,3 +38,10 @@
 
 ## Diseño Responsive
 ![](https://tinypic.host/images/2023/10/02/Responsive.png)
+
+------------
+
+##### Competencia: Hackathon Nicaragua 2023 :video_game:
+##### Equipo: EducAvengers :floppy_disk: 
+##### Categoria: Aficionado :rocket:
+##### Reto: Aplicación web formación continua de docentes del sistema educativo.
