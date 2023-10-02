@@ -15,7 +15,7 @@ class Comment extends Model
     }
 
     public function user(){
-        return $thid->belongsTo('App\Models\User');
+        return $this->belongsTo('App\Models\User');
     }
 
     //Relacion uno a muchos polimorfica

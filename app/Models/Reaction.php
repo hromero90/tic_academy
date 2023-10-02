@@ -15,7 +15,7 @@ class Reaction extends Model
     //Relacion uno a muchos inversa
 
     public function user(){
-        return $thid->belongsTo('App\Models\User');
+        return $this->belongsTo('App\Models\User');
     }
 
     public function reactionable(){

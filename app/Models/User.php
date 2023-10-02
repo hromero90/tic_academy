@@ -68,19 +68,19 @@ class User extends Authenticatable
     //Relacion uno a muchos
 
     public function courses_dictated(){
-        return $thid->hasMany('App\Models\Course');
+        return $this->hasMany('App\Models\Course');
     }
 
     public function reviews(){
-        return $thid->hasMany('App\Models\Review');
+        return $this->hasMany('App\Models\Review');
     }
 
     public function comments(){
-        return $thid->hasMany('App\Models\Comment');
+        return $this->hasMany('App\Models\Comment');
     }
 
     public function reactions(){
-        return $thid->hasMany('App\Models\Reaction');
+        return $this->hasMany('App\Models\Reaction');
     }
 
 
