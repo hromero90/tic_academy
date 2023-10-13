@@ -1,5 +1,6 @@
 <x-app-layout>
 
+    <!--Portada del sitio-->
     <section class="bg-cover" style="background-image: url({{asset('img/home/pexels-julia-m-cameron-4145190.jpg')}})">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36">
             <div class="w-full md:w-3/4 lg:w1/2">
@@ -121,7 +122,7 @@
                                 ({{$course->students_count}})
                             </p>
                         </div>
-                        <a href="{{route('course.show', $course)}}" type="button" class=" block text-center w-full mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                        <a href="{{route('courses.show', $course)}}" type="button" class=" block text-center w-full mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                             Mas Información...
                         </a>
 

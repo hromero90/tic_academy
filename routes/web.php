@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 
+use App\Http\Controllers\CourseController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,11 +29,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
-        Route::get('cursos', function (){
-            return "Aqui se mostrara la lista de los cursos";
-        })->name('courses.index');
+        Route::get('cursos', [CourseController::class, 'index'])->name('courses.index');
 
         Route::get('cursos/{course}', function ($course){
             return "Aqui se mostrara la informacion del curso";
-        })->name('course.show');
-
+        })->name('courses.show');
