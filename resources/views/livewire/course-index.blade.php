@@ -101,6 +101,4 @@
         {{$courses->links()}}
     </div>
 
-
-
 </div>
