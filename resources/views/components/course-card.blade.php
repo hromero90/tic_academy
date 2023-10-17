@@ -1,10 +1,10 @@
 @props(['course'])
 
-<article class="bg-white shadow-lg rounded overflow-hidden">
+<article class= "card">
     <img class="h-36 w-full object-cover" src="{{Storage::url($course->image->url)}}" alt="">
 
-    <div class="px-6 py-4">
-        <h1 class="text-xl text-gray-700 mb-2 leading-6">{{Str::limit($course->title, 40)}}</h1>
+    <div class="card-body">
+        <h1 class="card-title">{{Str::limit($course->title, 40)}}</h1>
         <p class= "text-gray-500 text-sm mb-2">Prof: {{$course->teacher->name}}</p>
 
         <div class="flex">
@@ -31,7 +31,7 @@
                 ({{$course->students_count}})
             </p>
         </div>
-        <a href="{{route('courses.show', $course)}}" type="button" class=" block text-center w-full mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+        <a href="{{route('courses.show', $course)}}" type="button" class="mt-4 btn btn-primary btn-block">
             Mas Información...
         </a>
 

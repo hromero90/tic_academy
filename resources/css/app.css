@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "commom.css";
+
+@import "buttons.css";
+
 [x-cloak] {
     display: none;
 }
