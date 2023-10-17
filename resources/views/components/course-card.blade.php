@@ -31,7 +31,7 @@
                 ({{$course->students_count}})
             </p>
         </div>
-        <a href="{{route('courses.show', $course)}}" type="button" class="mt-4 btn btn-primary btn-block">
+        <a href="{{route('courses.show', $course)}}" class="mt-4 btn btn-primary btn-block">
             Mas Información...
         </a>
 
