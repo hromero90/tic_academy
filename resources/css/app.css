@@ -1,10 +1,18 @@
+@import "/resources/css/commom.css";
+
+@import "/resources/css/buttons.css";
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "commom.css";
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
 
-@import "buttons.css";
+
+
 
 [x-cloak] {
     display: none;
