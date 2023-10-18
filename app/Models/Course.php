@@ -52,7 +52,7 @@ class Course extends Model
     }
 
     public function requirements(){
-        return $this->hasMany('App\Models\Requeriment');
+        return $this->hasMany('App\Models\Requirement');
     }
 
     public function goals(){
@@ -77,7 +77,7 @@ class Course extends Model
     }
 
     public function category(){
-        return $this->belongsTo('App\Models\Level');
+        return $this->belongsTo('App\Models\Category');
     }
 
     public function price3(){
