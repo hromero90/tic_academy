@@ -136,7 +136,7 @@
 
                     </div>
                 </article>
-            @endforeach
+                    @endforeach
          </aside>
     </div>
 </div>
