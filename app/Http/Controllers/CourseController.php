@@ -19,6 +19,8 @@ class CourseController extends Controller
                             ->latest('id')
                             ->take(5)
                             ->get();
+
+
         return view('courses.show', compact('course', 'similares'));
     }
 
@@ -29,4 +31,6 @@ class CourseController extends Controller
        return redirect()->route('course.status', $course);
 
     }
+
+    
 }
