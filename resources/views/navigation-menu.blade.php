@@ -260,11 +260,11 @@
         @else
         <div class="py-1 border-t border-gray-200">
             <x-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
-                Login
+                Iniciar Sesión
             </x-nav-link>
 
             <x-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
-                Register
+                Registrarse
             </x-nav-link>
         </div>
         @endauth
