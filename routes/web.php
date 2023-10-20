@@ -39,4 +39,4 @@ Route::middleware([
 
         // Route::get('course-status/{course}', [CourseController::class, 'status'])->name('courses.status');
 
-        Route::get('course-status/{course}', CourseStatus::class)->name('courses.status');
+        Route::get('course-status/{course}', CourseStatus::class)->name('courses.status')->middleware('auth');
