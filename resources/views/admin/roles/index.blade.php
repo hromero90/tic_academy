@@ -3,11 +3,15 @@
 @section('title', 'TIC Academy')
 
 @section('content_header')
-    <h1>TIC ACADEMY</h1>
+    <h1>Lista de roles</h1>
 @stop
 
 @section('content')
-    <p>Bienvenidos al panel de control.</p>
+    <div class="card">
+        <div class="card-body">
+            
+        </div>
+    </div>
 @stop
 
 @section('css')
