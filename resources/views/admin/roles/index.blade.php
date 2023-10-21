@@ -7,6 +7,15 @@
 @stop
 
 @section('content')
+
+@if (session('info'))
+
+<div class="alert alert-primary" role="alert">
+    <strong>Éxito!</strong> {{session('info')}}
+</div>
+    
+@endif
+
     <div class="card">
         <div class="card-header">
 
@@ -27,9 +36,9 @@
                             <td>{{$role->id}}</td>
                             <td>{{$role->name}}</td>
 
-                            <td>
+                            <td widch="10px">
                                 <a class="btn tbn-secondary" href="{{route('admin.roles.edit', $role)}}">Editar</a>
-                            </td>
+                            </td widch="10px">
                             <td>
                                 <form action="{{route('admin.roles.destroy',$role)}}" method="POST">
                                 @method('delete')
