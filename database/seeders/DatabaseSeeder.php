@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
         Storage::makeDirectory('/public/cursos');
 
         $this->call(UserSeeder::class);
+        
+        $this->call(PermissionSeeder::class);
 
         $this->call(LevelSeeder::class);
 
