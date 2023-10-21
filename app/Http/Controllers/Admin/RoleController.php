@@ -38,7 +38,7 @@ class RoleController extends Controller
     {
        
        $request->validate([
-        'name' => 'required',
+        'name' => ['unique:roles','required'],
         'permissions' => 'required'
        ]);
 
@@ -49,7 +49,7 @@ class RoleController extends Controller
        $role->permissions()->attach($request->permissions);
 
 
-        return redirect()->route('admin.roles.index')->witch('info', 'El rol se creo satisfactoriamente');
+        return redirect()->route('admin.roles.index')->with('info', 'El rol se creo satisfactoriamente');
     }
 
     /**
@@ -80,7 +80,7 @@ class RoleController extends Controller
             'permissions' => 'required'
            ]);
 
-           $role->permissions()->sync($request->permisions);
+           $role->permissions()->sync($request->permissions);
 
            return redirect()->route('admin.roles.edit', $role);
     }

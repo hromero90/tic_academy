@@ -19,7 +19,7 @@
     <div class="card">
         <div class="card-header">
 
-            <a href="{{route('admin.roles.create')}}">Crear curso</a>
+            <a href="{{route('admin.roles.create')}}">Crear Roles</a>
 
         </div>
         <div class="card-body">
@@ -36,10 +36,10 @@
                             <td>{{$role->id}}</td>
                             <td>{{$role->name}}</td>
 
-                            <td widch="10px">
-                                <a class="btn tbn-secondary" href="{{route('admin.roles.edit', $role)}}">Editar</a>
-                            </td widch="10px">
-                            <td>
+                            <td width="10px">
+                                <a class="btn btn-secondary" href="{{route('admin.roles.edit', $role)}}">Editar</a>
+                            </td>
+                            <td width="10px">
                                 <form action="{{route('admin.roles.destroy',$role)}}" method="POST">
                                 @method('delete')
                                 @csrf
