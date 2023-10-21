@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\CourseController;
 
+use App\Http\Controllers\ProductController;
+
 use App\Livewire\CourseStatus;
 
 /*
@@ -32,6 +34,8 @@ Route::middleware([
 });
 
         Route::get('cursos', [CourseController::class, 'index'])->name('courses.index');
+        
+        Route::get('products', [ProductController::class, 'index'])->name('products.index');
 
         Route::get('cursos/{course}', [CourseController::class, 'show'])->name('courses.show');
 

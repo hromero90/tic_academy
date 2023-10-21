@@ -106,7 +106,7 @@
                    <form action="{{route('courses.enrolled', $course)}}" method="post">
                         @csrf
                         
-                        <button class="btn btn-danger btn-block mt-4" >Comprar este curso</button>
+                        <button class="btn btn-danger btn-block mt-4" >Matricularme</button>
                     </form>
                         
                     @endcan

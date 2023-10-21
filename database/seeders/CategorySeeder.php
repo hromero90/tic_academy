@@ -15,15 +15,19 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         Category::create([
-            'name' => 'Desarrollo web'
+            'name' => 'Diseño Gráfico'
         ]);
 
         Category::create([
-            'name' => 'Disenio web'
+            'name' => 'Inteligencia Artificial'
         ]);
 
         Category::create([
-            'name' => 'Programación'
+            'name' => 'Ofimatica'
+        ]);
+
+        Category::create([
+            'name' => 'Gratis'
         ]);
     }
 }
